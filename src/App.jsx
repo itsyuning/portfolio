@@ -12,7 +12,7 @@ const works = [
     image: './assets/photos/bored-participant.webp', alt: 'A visitor participating in A Bored Game',
     second: './assets/photos/bored-installation.webp',
     text: 'Built for a public exhibition, A Bored Game asks visitors to turn pegs while a positive or negative inner monologue plays through headphones. Every minute they choose a coloured ball for what they felt and add it to a shared hourglass. Our tests found boredom often arrived after three or four minutes, but never in quite the same emotional form.',
-    credit: 'TEAM OF 3 / MY ROLE: COMMUNICATION & PLANNING',
+    credit: 'TEAM OF 3',
     tags: ['PARTICIPATORY INSTALLATION', 'EXHIBITION', 'EMOTION'], links: [],
   },
   {
@@ -29,7 +29,7 @@ const works = [
     course: 'AI & Art', tone: 'blue',
     image: './assets/seeing-sound-figure.webp', alt: 'Generated image, waveform and spectrogram from Seeing Sound',
     text: 'Each lyric line from Lou Reed’s Perfect Day becomes a short scene. We paired eleven field recordings with diffusion-generated images, embedded those images into log-mel spectrograms, then turned them back into sound. The distortions are not hidden: they expose the practical tradeoff between an image that reads clearly and audio that still sounds like its original place.',
-    credit: 'TEAM OF 3',
+    credit: 'TEAM OF 2',
     tags: ['FIELD RECORDING', 'DIFFUSION', 'SOUND'], links: [['ENTER WEBSITE', 'https://aimc2026-demo-anonymous.netlify.app/'], ['READ PAPER', './assets/seeing-sound-paper.pdf']],
   },
   {
