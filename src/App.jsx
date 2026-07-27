@@ -9,8 +9,8 @@ const works = [
   {
     no: '01', chapter: 'OBSERVE', title: 'A Bored Game', year: '2025',
     course: 'Exhibition: Science to Experience', tone: 'coral',
-    image: '/assets/photos/bored-participant.webp', alt: 'A visitor participating in A Bored Game',
-    second: '/assets/photos/bored-installation.webp',
+    image: './assets/photos/bored-participant.webp', alt: 'A visitor participating in A Bored Game',
+    second: './assets/photos/bored-installation.webp',
     text: 'Built for a public exhibition, A Bored Game asks visitors to turn pegs while a positive or negative inner monologue plays through headphones. Every minute they choose a coloured ball for what they felt and add it to a shared hourglass. Our tests found boredom often arrived after three or four minutes, but never in quite the same emotional form.',
     credit: 'TEAM OF 3 / MY ROLE: COMMUNICATION & PLANNING',
     tags: ['PARTICIPATORY INSTALLATION', 'EXHIBITION', 'EMOTION'], links: [],
@@ -18,25 +18,25 @@ const works = [
   {
     no: '02', chapter: 'OBSERVE', title: 'Too Cute to Kill', year: '2026',
     course: 'Video Games for Research', tone: 'violet',
-    image: '/assets/photos/too-cute-threatening.webp', alt: 'Threatening character condition in Too Cute to Kill',
-    second: '/assets/photos/too-cute-character.webp',
+    image: './assets/photos/too-cute-threatening.webp', alt: 'Threatening character condition in Too Cute to Kill',
+    second: './assets/photos/too-cute-character.webp',
     text: 'We removed story, dialogue, movement and threat from a shooting task to see what character design alone would do. Thirty-six participants chose five targets from cute, neutral and threatening characters. Threatening figures were killed most often; cute ones were remembered and deliberately avoided, revealing a gap between what players did and how they recalled the choice.',
     credit: 'TEAM OF 6',
-    tags: ['GAME RESEARCH', 'BEHAVIOURAL STUDY', 'CHARACTER DESIGN'], links: [['READ PAPER', '/assets/too-cute-to-kill.pdf']],
+    tags: ['GAME RESEARCH', 'BEHAVIOURAL STUDY', 'CHARACTER DESIGN'], links: [['READ PAPER', './assets/too-cute-to-kill.pdf']],
   },
   {
     no: '03', chapter: 'LISTEN', title: 'Seeing Sound', year: '2026',
     course: 'AI & Art', tone: 'blue',
-    image: '/assets/seeing-sound-figure.webp', alt: 'Generated image, waveform and spectrogram from Seeing Sound',
+    image: './assets/seeing-sound-figure.webp', alt: 'Generated image, waveform and spectrogram from Seeing Sound',
     text: 'Each lyric line from Lou Reed’s Perfect Day becomes a short scene. We paired eleven field recordings with diffusion-generated images, embedded those images into log-mel spectrograms, then turned them back into sound. The distortions are not hidden: they expose the practical tradeoff between an image that reads clearly and audio that still sounds like its original place.',
     credit: 'TEAM OF 3',
-    tags: ['FIELD RECORDING', 'DIFFUSION', 'SOUND'], links: [['ENTER WEBSITE', 'https://aimc2026-demo-anonymous.netlify.app/'], ['READ PAPER', '/assets/seeing-sound-paper.pdf']],
+    tags: ['FIELD RECORDING', 'DIFFUSION', 'SOUND'], links: [['ENTER WEBSITE', 'https://aimc2026-demo-anonymous.netlify.app/'], ['READ PAPER', './assets/seeing-sound-paper.pdf']],
   },
   {
     no: '04', chapter: 'LISTEN', title: 'The Grumpy Bear', year: '2025',
     course: 'Sound, Space and Interaction', tone: 'amber',
-    image: '/assets/photos/grumpy-bear.webp', alt: 'The Grumpy Bear interactive sonic prototype',
-    second: '/assets/photos/grumpy-bear-front.webp',
+    image: './assets/photos/grumpy-bear.webp', alt: 'The Grumpy Bear interactive sonic prototype',
+    second: './assets/photos/grumpy-bear-front.webp',
     text: 'The bear purrs when petted, starts breathing as someone approaches, and becomes alarmed when personal space or pressure thresholds are crossed. An FSR in its head and an ultrasonic sensor in its eyes feed Arduino data into Pure Data. Much of the work was tuning and debugging those thresholds until the sounds felt like one moody character rather than disconnected effects.',
     credit: 'TEAM OF 2',
     tags: ['SONIC INTERACTION', 'ULTRASONIC SENSING', 'PROTOTYPE'], links: [],
@@ -44,8 +44,8 @@ const works = [
   {
     no: '05', chapter: 'TOUCH', title: 'In Bloom', year: '2025',
     course: 'Hardware & Physical Computing', tone: 'green',
-    image: '/assets/photos/in-bloom-installation.webp', alt: 'Responsive paper flowers in the In Bloom installation',
-    second: '/assets/photos/in-bloom-presentation.webp',
+    image: './assets/photos/in-bloom-installation.webp', alt: 'Responsive paper flowers in the In Bloom installation',
+    second: './assets/photos/in-bloom-presentation.webp',
     text: 'Three handmade wire flowers open when two people complete a human circuit and close when contact breaks. Arduino and servo motors make the connection visible, while prolonged separation makes the flowers wither. The resistance readings changed with the environment, so we had to recalibrate the installation often; its technical instability ended up echoing the fragile relationship it represents.',
     credit: 'TEAM OF 4',
     tags: ['ARDUINO', 'SERVO MOTORS', 'HUMAN CIRCUIT'], links: [],
@@ -53,8 +53,8 @@ const works = [
   {
     no: '06', chapter: 'TOUCH', title: 'Blushy', year: '2025',
     course: 'Artificial Creatures', tone: 'pink',
-    image: '/assets/photos/blushy-object.webp', alt: 'Blushy, a suspended responsive cloud creature',
-    second: '/assets/photos/blushy-encounter.webp',
+    image: './assets/photos/blushy-object.webp', alt: 'Blushy, a suspended responsive cloud creature',
+    second: './assets/photos/blushy-encounter.webp',
     text: 'Blushy hangs still until someone comes close. After five seconds of sustained attention, lights in its cheeks build into an awkward, flickering blush; a pressure-sensitive handshake that becomes too firm produces a low, sad whine. The creature has no instructions and no task, so embarrassment is communicated through presence rather than explanation.',
     credit: 'TEAM OF 2',
     tags: ['PRESSURE SENSOR', 'INSTALLATION', 'EMOTION'], links: [['PROJECT ARCHIVE', 'https://sites.google.com/view/artificialcreatures2025/portfolios/yuning-yao/blushy']],
@@ -62,7 +62,7 @@ const works = [
   {
     no: '07', chapter: 'TOUCH', title: 'Graffiti Studio', year: '2024',
     course: 'Creative Programming', tone: 'acid',
-    image: '/assets/graffiti.webp', alt: 'Graffiti Studio creative tool output',
+    image: './assets/graffiti.webp', alt: 'Graffiti Studio creative tool output',
     text: 'Graffiti Studio recreates spray painting in a browser through a particle system, switchable urban surfaces and a spray sound that follows the gesture. I spent most of the work balancing random dispersion with enough control to draw without lag. I deliberately left out layers and kept undo and screenshot tools, choosing a simple sketchbook over a miniature image editor.',
     credit: 'INDIVIDUAL PROJECT',
     tags: ['P5.JS', 'WEB AUDIO', 'CREATIVE TOOL'], links: [['TRY THE SKETCH', 'https://editor.p5js.org/404sandheartbreaks/sketches/wOBTUT6kj']],
@@ -70,33 +70,33 @@ const works = [
   {
     no: '08', chapter: 'NEGOTIATE', title: 'Zen Studio', year: '2025',
     course: 'Computational Creativity', tone: 'lavender',
-    image: '/assets/photos/zen-studio-output.webp', alt: 'Mandala created with Zen Studio',
-    second: '/assets/photos/bitwise-process.webp',
+    image: './assets/photos/zen-studio-output.webp', alt: 'Mandala created with Zen Studio',
+    second: './assets/photos/bitwise-process.webp',
     text: 'Zen Studio begins with a hand-drawn stroke and repeats it through radial symmetry. Four companions, Koi, Lotus, Bamboo and Wind, learn local tendencies from the user’s drawing and offer different continuations that can be accepted or rejected. The finished mandala becomes pin-and-thread instructions; in tests with eight participants, the strongest result was a continued sense of human control.',
     credit: 'TEAM OF 3',
     tags: ['CO-CREATION', 'STRING ART', 'ALGORITHMS'], links: [['TRY ZEN STUDIO', 'https://zenartstudio.netlify.app/']],
-    siblings: [['Bad Poets Society', '/assets/bad-poets-logbook.pdf'], ['Bitwise Bakeoff', '/assets/bitwise-bakeoff-report.pdf']],
+    siblings: [['Bad Poets Society', './assets/bad-poets-logbook.pdf'], ['Bitwise Bakeoff', './assets/bitwise-bakeoff-report.pdf']],
   },
   {
     no: '09', chapter: 'NEGOTIATE', title: 'Learning Football', year: '2024',
     course: 'HCI & Information Visualisation', tone: 'pitch',
-    image: '/assets/learning-football-formations.webp', alt: 'Interactive football formations interface',
+    image: './assets/learning-football-formations.webp', alt: 'Interactive football formations interface',
     text: 'Designed for people who find football intimidating, the site turns a virtual library into a route through formations, field simulations, definitions and small games. We used a book-like story to keep separate visualisations connected, and learned Three.js while building the 3D spaces. A second evaluation with seven people produced more mixed and useful feedback than the first.',
     credit: 'TEAM OF 2',
-    tags: ['THREE.JS', 'INFORMATION VISUALISATION', 'EDUCATION'], links: [['ENTER WEBSITE', 'https://hciiv-project.vercel.app/'], ['READ PAPER', '/assets/learning-football-paper.pdf']],
+    tags: ['THREE.JS', 'INFORMATION VISUALISATION', 'EDUCATION'], links: [['ENTER WEBSITE', 'https://hciiv-project.vercel.app/'], ['READ PAPER', './assets/learning-football-paper.pdf']],
     contain: true,
   },
 ]
 
 const papers = [
-  ['2026', 'Seeing Sound', 'Audiovisual AI · mediated musicianship', 'Field recordings, diffusion-generated images and playable spectrograms become a compositional workflow of interpretation, prompting and curation.', [['Website', 'https://aimc2026-demo-anonymous.netlify.app/'], ['Paper', '/assets/seeing-sound-paper.pdf']], '/assets/seeing-sound-figure.webp'],
-  ['2026', 'Too Cute to Kill', 'Game research · behavioural study', 'A study with 36 participants measuring how character cuteness influences aggression in a non-hostile first-person shooting task.', [['Paper', '/assets/too-cute-to-kill.pdf']], '/assets/photos/too-cute-character.webp'],
-  ['2026', 'From Care to Surveillance', 'Data justice · public policy', 'An examination of Amsterdam’s Top600 programme and how information gathered for care can be repurposed for enforcement.', [['Paper', '/assets/from-care-to-surveillance.pdf']]],
-  ['2025', 'Does AI Perceive Optical Illusions Like Humans Do?', 'Human and machine perception · group poster', 'Eight people and four AI models evaluated five optical illusions, revealing different relationships to intuition and false guidance.', [['Poster', '/assets/non-human-cognition-optical-illusions-poster.pdf']], '/assets/non-human-cognition-optical-illusions-poster.webp', true],
-  ['2025', 'The Rise of Distinctively Ugly Luxury', '7-Papers · fashion aesthetics', 'Why do awkward, oversized or deliberately ugly luxury objects become desirable?', [['Paper', '/assets/7-papers-ugly-luxury.pdf']]],
+  ['2026', 'Seeing Sound', 'Audiovisual AI · mediated musicianship', 'Field recordings, diffusion-generated images and playable spectrograms become a compositional workflow of interpretation, prompting and curation.', [['Website', 'https://aimc2026-demo-anonymous.netlify.app/'], ['Paper', './assets/seeing-sound-paper.pdf']], './assets/seeing-sound-figure.webp'],
+  ['2026', 'Too Cute to Kill', 'Game research · behavioural study', 'A study with 36 participants measuring how character cuteness influences aggression in a non-hostile first-person shooting task.', [['Paper', './assets/too-cute-to-kill.pdf']], './assets/photos/too-cute-character.webp'],
+  ['2026', 'From Care to Surveillance', 'Data justice · public policy', 'An examination of Amsterdam’s Top600 programme and how information gathered for care can be repurposed for enforcement.', [['Paper', './assets/from-care-to-surveillance.pdf']]],
+  ['2025', 'Does AI Perceive Optical Illusions Like Humans Do?', 'Human and machine perception · group poster', 'Eight people and four AI models evaluated five optical illusions, revealing different relationships to intuition and false guidance.', [['Poster', './assets/non-human-cognition-optical-illusions-poster.pdf']], './assets/non-human-cognition-optical-illusions-poster.webp', true],
+  ['2025', 'The Rise of Distinctively Ugly Luxury', '7-Papers · fashion aesthetics', 'Why do awkward, oversized or deliberately ugly luxury objects become desirable?', [['Paper', './assets/7-papers-ugly-luxury.pdf']]],
   ['2025', 'Dreamscape', 'Artistic strategy · dreams', 'An artistic strategy built from the fluid logic and symbolic structure of dream consciousness.', []],
   ['2025', 'Can Dogs Infer Human Moral Judgments?', 'Animal cognition · proposal', 'A proposed study asking whether domestic dogs distinguish helpful from unhelpful human actors.', []],
-  ['2024', 'Learning Football through Interactive Storytelling', 'HCI · information visualisation', 'A book-like environment using visualisations and mini-games to make football concepts approachable.', [['Website', 'https://hciiv-project.vercel.app/'], ['Paper', '/assets/learning-football-paper.pdf']], '/assets/learning-football-formations.webp'],
+  ['2024', 'Learning Football through Interactive Storytelling', 'HCI · information visualisation', 'A book-like environment using visualisations and mini-games to make football concepts approachable.', [['Website', 'https://hciiv-project.vercel.app/'], ['Paper', './assets/learning-football-paper.pdf']], './assets/learning-football-formations.webp'],
 ]
 
 const liveWorks = [
@@ -218,12 +218,12 @@ function App() {
       <section className="thesis-scene">
         <div className="thesis-heading" data-reveal><span>FEATURE PRESENTATION / GRADUATION PROJECT / 2026</span><h2>When an explanation<br />changes the judge.</h2></div>
         <div className="thesis-stage">
-          <figure className="thesis-screen" data-image-reveal><img src="/assets/thesis-live-interface.webp" alt="AI-assisted misinformation judgment study interface" /><figcaption>LIVE STUDY INTERFACE · 25 TRIALS · FIVE EXPLANATION CONDITIONS</figcaption></figure>
+          <figure className="thesis-screen" data-image-reveal><img src="./assets/thesis-live-interface.webp" alt="AI-assisted misinformation judgment study interface" /><figcaption>LIVE STUDY INTERFACE · 25 TRIALS · FIVE EXPLANATION CONDITIONS</figcaption></figure>
           <aside data-reveal>
             <span>HUMAN–AI INTERACTION / XAI / MISINFORMATION</span>
             <p>Five explanation interfaces, one unstable relationship between advice and trust. The study asks whether token-level explanations help people resist incorrect AI advice—or simply make the advice feel more legible.</p>
             <blockquote><b>MORE ≠ SAFER</b>Static token highlights offered no clear protection against incorrect AI advice beyond showing the prediction alone.</blockquote>
-            <div className="thesis-links"><a href="https://xaiui.vercel.app" target="_blank" rel="noreferrer">ENTER THE STUDY ↗</a><a href="/assets/yuning-yao-master-thesis.pdf" target="_blank" rel="noreferrer">READ THE THESIS ↗</a></div>
+            <div className="thesis-links"><a href="https://xaiui.vercel.app" target="_blank" rel="noreferrer">ENTER THE STUDY ↗</a><a href="./assets/yuning-yao-master-thesis.pdf" target="_blank" rel="noreferrer">READ THE THESIS ↗</a></div>
           </aside>
         </div>
         <div className="thesis-progress"><span>EXPLANATION</span><i /><span>JUDGMENT</span></div>
@@ -263,7 +263,7 @@ function App() {
       </section>
 
       <section className="about" id="about">
-        <figure className="about-eye"><img src="/assets/photos/yuning-portrait.webp" alt="Portrait of Yuning Yao" /><figcaption>YUNING YAO · 2026</figcaption></figure>
+        <figure className="about-eye"><img src="./assets/photos/yuning-portrait.webp" alt="Portrait of Yuning Yao" /><figcaption>YUNING YAO · 2026</figcaption></figure>
         <div className="about-text" data-reveal>
           <span>ABOUT YUNING / BEHIND THE CAMERA</span>
           <h2>Looking closely<br />is still the method.</h2>
@@ -273,7 +273,7 @@ function App() {
       </section>
 
       <section className="contact-sheet">
-        {[['/assets/photos/bored-team.webp','WITH OTHERS'],['/assets/photos/blushy-electronics.webp','BEFORE THE BODY'],['/assets/photos/bitwise-process.webp','TEST / FAIL / REPEAT'],['/assets/photos/in-bloom-presentation.webp','SHOW THE PROCESS']].map(([src, label]) => <figure key={src} data-image-reveal><img src={src} alt="" /><figcaption>{label}</figcaption></figure>)}
+        {[['./assets/photos/bored-team.webp','WITH OTHERS'],['./assets/photos/blushy-electronics.webp','BEFORE THE BODY'],['./assets/photos/bitwise-process.webp','TEST / FAIL / REPEAT'],['./assets/photos/in-bloom-presentation.webp','SHOW THE PROCESS']].map(([src, label]) => <figure key={src} data-image-reveal><img src={src} alt="" /><figcaption>{label}</figcaption></figure>)}
       </section>
 
       <footer className="credits">
