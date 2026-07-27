@@ -267,7 +267,7 @@ function App() {
         <div className="about-text" data-reveal>
           <span>ABOUT YUNING / BEHIND THE CAMERA</span>
           <h2>Looking closely<br />is still the method.</h2>
-          <div className="about-columns"><p>Before Media Technology, I studied Film, TV &amp; Media Art in Shanghai and made documentaries about urban life, identity and human connection. Atmosphere, rhythm and the small details of an encounter continue to guide how I work.</p><p>Today I work across interactive installation, creative coding, sound, AI and experimental research. The medium changes; the question stays close to the body.</p></div>
+          <div className="about-columns"><p>Before joining Creative Intelligence &amp; Technology, I studied Film, TV &amp; Media Art in Shanghai and made documentaries about urban life, identity and human connection. Atmosphere, rhythm and the small details of an encounter continue to guide how I work.</p><p>Today I work across interactive installation, creative coding, sound, AI and experimental research. The medium changes; the question stays close to the body.</p></div>
           <div className="route"><span><b>BEFORE</b>Shanghai · documentary film</span><i>→</i><span><b>NOW</b>Leiden · responsive media</span></div>
         </div>
       </section>
@@ -279,7 +279,7 @@ function App() {
       <footer className="credits">
         <span>END CREDITS / 2026</span>
         <p>The work changes form.<br />The curiosity remains.</p>
-        <div><span>YUNING YAO · MEDIA TECHNOLOGY MSc · LEIDEN UNIVERSITY</span><span>Based in the Netherlands · Open to collaborations</span></div>
+        <div><span>YUNING YAO · CREATIVE INTELLIGENCE &amp; TECHNOLOGY · LEIDEN UNIVERSITY</span><span>Based in the Netherlands · Open to collaborations</span></div>
       </footer>
     </main>
   )
