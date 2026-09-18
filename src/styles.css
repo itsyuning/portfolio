@@ -58,3 +58,37 @@
   .hero-title{margin-top:13vh;font-size:22vw;line-height:.8}.hero-title span:last-child{margin-left:13vw}.hero-leader{right:-12vw;top:35vh;width:65vw}.hero-filmmarks{left:16px;top:65vh;grid-template-columns:auto 9vw auto 9vw auto}.hero-deck{left:16px}.hero-practice{font-size:6px}.prologue{padding:13vh 18px}.prologue p{font-size:10.5vw;line-height:1.1}.prologue p+p{width:90%;margin-top:8vh;font-size:7.3vw;line-height:1.18}.thesis-heading h2{font-size:11.8vw;line-height:1}.reel-intro>span{font-size:14vw}.work-copy h3{font-size:11.8vw;line-height:1}.live-portals h2,.paper-room>header h2,.about-text h2{font-size:12.3vw;line-height:1}.credits>p{font-size:13vw;line-height:1}.course-siblings{grid-template-columns:1fr;gap:8px}.course-siblings small{margin-bottom:4px}
 }
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}.reel-track{transform:none!important}.scan-line{display:none}}
+
+/* Earlier films are presented as screenings, distinct from the course-project reel. */
+.films-room{padding:17vh 6vw 19vh;background:#e8dfcf;color:#211a17;scroll-margin-top:48px}
+.films-intro{display:grid;grid-template-columns:.55fr 1.45fr;column-gap:5vw;align-items:start;margin-bottom:13vh}
+.films-intro>span{padding-top:14px;font:400 9px/1.6 Terminal,sans-serif;letter-spacing:.15em}
+.films-intro h2{margin:0;font:400 clamp(64px,8.2vw,126px)/.9 Basteleur,serif;letter-spacing:-.052em}
+.films-intro h2 em{font-style:normal;color:#8b4e3e}
+.films-intro>p{grid-column:2;max-width:680px;margin:4vh 0 0;font:300 clamp(13px,1.12vw,17px)/1.8 'IBM Plex Mono',monospace}
+.film-list{border-top:1px solid rgba(33,26,23,.7)}
+.film-card{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:auto 1fr;gap:0 4vw;padding:13px 0 8vh;border-bottom:1px solid rgba(33,26,23,.52)}
+.film-card-heading{grid-column:1/-1;display:flex;justify-content:space-between;padding:0 0 13px;font:400 9px Terminal,sans-serif;letter-spacing:.15em}
+.film-card-media{min-width:0;aspect-ratio:16/9;background:#191616;overflow:hidden}
+.film-card-media iframe{display:block;width:100%;height:100%;border:0}
+.film-play{position:relative;display:block;width:100%;height:100%;padding:0;border:0;overflow:hidden;background:#191616;cursor:pointer;text-align:left}
+.film-play img{width:100%;height:100%;object-fit:cover;filter:saturate(.72) contrast(1.05);transition:transform .7s,filter .7s}
+.film-play:hover img,.film-play:focus-visible img{transform:scale(1.035);filter:saturate(1)}
+.film-play:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.62),transparent 42%);pointer-events:none}
+.film-play span{position:absolute;z-index:1;left:22px;right:22px;bottom:18px;display:flex;justify-content:space-between;align-items:center;color:#fff;font:400 12px Terminal,sans-serif;letter-spacing:.15em}
+.film-play i{display:grid;place-items:center;width:45px;height:45px;border:1px solid rgba(255,255,255,.85);border-radius:50%;font:400 12px Terminal,sans-serif;font-style:normal}
+.film-card-copy{display:flex;flex-direction:column;justify-content:space-between;gap:5vh;padding:1vh 0 0}
+.film-card-copy>div:first-child>span{font:400 9px Terminal,sans-serif;letter-spacing:.13em;color:#7e625a}
+.film-card-copy h3{margin:2vh 0 0;font:400 clamp(43px,5vw,77px)/.95 Basteleur,serif;letter-spacing:-.045em}
+.film-original{margin:12px 0 0;font:300 13px/1.5 'IBM Plex Mono',sans-serif;color:#826254}
+.film-card-copy>div:last-child>p{max-width:510px;margin:0 0 4vh;font:300 clamp(12px,1vw,15px)/1.75 'IBM Plex Mono',monospace}
+.film-card-copy a,.film-archive-link{display:inline-block;padding-bottom:7px;border-bottom:1px solid currentColor;font:400 9px Terminal,sans-serif;letter-spacing:.13em}
+.film-card-copy a:hover,.film-archive-link:hover{color:#a64e39}
+.film-card:nth-child(even) .film-card-media{grid-column:2;grid-row:2}
+.film-card:nth-child(even) .film-card-copy{grid-column:1;grid-row:2;padding-right:4vw}
+.film-archive-link{display:flex;justify-content:space-between;max-width:440px;margin:9vh 0 0 auto;padding:15px 0}
+.about-columns a{border-bottom:1px solid currentColor}.about-columns a:hover{color:#7c3427}
+@media(max-width:900px){
+  .films-room{padding:13vh 16px}.films-intro{display:block;margin-bottom:10vh}.films-intro>span{display:block;margin-bottom:5vh}.films-intro h2{font-size:12.5vw}.films-intro>p{margin-top:5vh;font-size:12px}
+  .film-card{display:block;padding:12px 0 10vh}.film-card-heading{padding-bottom:12px}.film-card-media{aspect-ratio:16/9}.film-card-copy{gap:5vh;padding-top:4vh}.film-card-copy h3{font-size:12vw}.film-card-copy>div:last-child>p{font-size:12px}.film-card:nth-child(even) .film-card-copy{padding-right:0}.film-archive-link{margin-top:6vh}
+}

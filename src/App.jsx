@@ -108,6 +108,24 @@ const liveWorks = [
   ['06', 'Artificial Creatures', 'Three creature studies', 'https://sites.google.com/view/artificialcreatures2025/portfolios/yuning-yao'],
 ]
 
+const films = [
+  {
+    year: '2022', title: 'Dissimilation', original: '正轨', kind: 'EXPERIMENTAL SHORT', duration: '06:03',
+    image: './assets/photos/film-dissimilation.jpg', videoId: 'IPVsWjUlHVA',
+    description: 'Filmed on the metro during the pandemic, this short follows commuters moving towards destinations the film never names. Masks remove the easy language of facial expression; metal, glass and the repeated passage of bodies carry the atmosphere instead. With no plot to resolve, the work looks at how a public system choreographs private urgency.',
+  },
+  {
+    year: '2023', title: 'Life Upon the Grass', original: '草地上游着吃草的羊', kind: 'DOCUMENTARY', duration: '48:00',
+    image: './assets/photos/film-life-upon-the-grass.jpg', videoId: 'fJdi2pSNfa0',
+    description: 'The person I first imagined as the protagonist never appears on camera. In a family living and making art in Inner Mongolia, the father becomes present through others’ conversations, poems, drawings and the rhythms of work around the house. Ordinary care, artistic impulse and private pain coexist; a portrait forms through what remains off-screen.',
+  },
+  {
+    year: '2024', title: 'In the Name of Love', original: '以爱之名', kind: 'GRADUATION DOCUMENTARY', duration: '33:02',
+    image: './assets/photos/film-in-the-name-of-love.jpg', videoId: 'vfmkUPQGQKE',
+    description: 'My undergraduate graduation film observes an uncle who wants his son to marry and a son asking to live on his own terms. Phone calls, visits and repeated questions turn affection into pressure. Filming from inside the family meant attending not only to their disagreement, but also to the fragile line between intimacy and intrusion.',
+  },
+]
+
 function LinkPills({ links }) {
   if (!links?.length) return <span className="no-link">DOCUMENTATION ON REQUEST</span>
   return <div className="link-pills">{links.map(([label, href]) => <a href={href} target="_blank" rel="noreferrer" key={label}>{label}<i>↗</i></a>)}</div>
@@ -130,6 +148,24 @@ function WorkFrame({ work }) {
         <div className="work-tags">{work.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
         {work.siblings && <div className="course-siblings"><small>OTHER WORKS FROM THE SAME COURSE</small>{work.siblings.map(([label, href]) => <a href={href} target="_blank" rel="noreferrer" key={label}>{label} ↗</a>)}</div>}
         <LinkPills links={work.links} />
+      </div>
+    </article>
+  )
+}
+
+function FilmCard({ film, index }) {
+  return (
+    <article className="film-card" data-reveal>
+      <div className="film-card-heading"><span>FILM {String(index + 1).padStart(2, '0')}</span><span>{film.year} / {film.duration}</span></div>
+      <div className="film-card-media">
+        <a className="film-play" href={`https://www.youtube.com/watch?v=${film.videoId}`} target="_blank" rel="noreferrer" aria-label={`Watch ${film.title} on YouTube in a new tab`}>
+          <img src={film.image} alt={`Still from ${film.title}`} loading="lazy" />
+          <span>WATCH FILM <i aria-hidden="true">↗</i></span>
+        </a>
+      </div>
+      <div className="film-card-copy">
+        <div><span>{film.kind}</span><h3>{film.title}</h3><p className="film-original" lang="zh">{film.original}</p></div>
+        <div><p>{film.description}</p><a href={`https://www.youtube.com/watch?v=${film.videoId}`} target="_blank" rel="noreferrer">OPEN ON YOUTUBE ↗</a></div>
       </div>
     </article>
   )
@@ -188,7 +224,7 @@ function App() {
       <div className="texture" aria-hidden="true" />
       <header className="topbar">
         <a href="#top" className="logo">YUNING YAO <small>AFTERIMAGE CINEMA</small></a>
-        <nav><a href="#works">Works</a><a href="#papers">Papers</a><a href="#about">About</a></nav>
+        <nav><a href="#works">Works</a><a href="#papers">Papers</a><a href="#films">Films</a><a href="#about">About</a></nav>
         <span>NL · 2026</span>
       </header>
 
@@ -262,12 +298,22 @@ function App() {
         </div>
       </section>
 
+      <section className="films-room" id="films">
+        <header className="films-intro" data-reveal>
+          <span>EARLIER FILMS / SHANGHAI / 2022—2024</span>
+          <h2>What stays<br /><em>outside the frame.</em></h2>
+          <p>Before I worked with interfaces and installations, I used a camera to look closely at movement, family and ordinary life. These three films let their subjects emerge through the spaces around them, the words they choose, and sometimes what they cannot say.</p>
+        </header>
+        <div className="film-list">{films.map((film, index) => <FilmCard film={film} index={index} key={film.videoId} />)}</div>
+        <a className="film-archive-link" href="https://www.youtube.com/@eve_yuning/videos" target="_blank" rel="noreferrer">VIEW THE COMPLETE FILM ARCHIVE <span>↗</span></a>
+      </section>
+
       <section className="about" id="about">
         <figure className="about-eye"><img src="./assets/photos/yuning-portrait.webp" alt="Portrait of Yuning Yao" /><figcaption>YUNING YAO · 2026</figcaption></figure>
         <div className="about-text" data-reveal>
           <span>ABOUT YUNING / BEHIND THE CAMERA</span>
           <h2>Looking closely<br />is still the method.</h2>
-          <div className="about-columns"><p>Before joining Creative Intelligence &amp; Technology, I studied Film, TV &amp; Media Art in Shanghai and made documentaries about urban life, identity and human connection. Atmosphere, rhythm and the small details of an encounter continue to guide how I work.</p><p>Today I work across interactive installation, creative coding, sound, AI and experimental research. The medium changes; the question stays close to the body.</p></div>
+          <div className="about-columns"><p>Before joining Creative Intelligence &amp; Technology, I studied Film, TV &amp; Media Art in Shanghai and made documentary and experimental films about family, ordinary life and movement through the city. Atmosphere, rhythm and the small details of an encounter continue to guide how I work. <a href="#films">Watch the earlier films ↗</a></p><p>Today I work across interactive installation, creative coding, sound, AI and experimental research. The medium changes; the question stays close to the body.</p></div>
           <div className="route"><span><b>BEFORE</b>Shanghai · documentary film</span><i>→</i><span><b>NOW</b>Leiden · responsive media</span></div>
         </div>
       </section>
