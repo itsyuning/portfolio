@@ -122,7 +122,7 @@ const films = [
   {
     year: '2024', title: 'In the Name of Love', original: '以爱之名', kind: 'GRADUATION DOCUMENTARY', duration: '33:02',
     image: './assets/photos/film-in-the-name-of-love.jpg', videoId: 'vfmkUPQGQKE',
-    description: 'My undergraduate graduation film observes an uncle who wants his son to marry and a son asking to live on his own terms. Phone calls, visits and repeated questions turn affection into pressure. Filming from inside the family meant attending not only to their disagreement, but also to the fragile line between intimacy and intrusion.',
+    description: 'An unanswered video call opens my graduation film. My uncle wants my cousin to marry, and their conversations keep circling back to that question. I filmed from inside my own family, where a father\'s worry can sound like an instruction and a son\'s silence can be mistaken for defiance. The film stays with them after the argument, as ordinary life resumes without a neat answer.',
   },
 ]
 
