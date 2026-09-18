@@ -30,7 +30,7 @@ const works = [
     image: './assets/seeing-sound-figure.webp', alt: 'Generated image, waveform and spectrogram from Seeing Sound',
     text: 'Each lyric line from Lou Reed’s Perfect Day becomes a short scene. We paired eleven field recordings with diffusion-generated images, embedded those images into log-mel spectrograms, then turned them back into sound. The distortions are not hidden: they expose the practical tradeoff between an image that reads clearly and audio that still sounds like its original place.',
     credit: 'TEAM OF 2',
-    tags: ['FIELD RECORDING', 'DIFFUSION', 'SOUND'], links: [['ENTER WEBSITE', 'https://aimc2026-demo-anonymous.netlify.app/'], ['READ PAPER', './assets/seeing-sound-paper.pdf']],
+    tags: ['FIELD RECORDING', 'DIFFUSION', 'SOUND'], links: [['ENTER WEBSITE', 'https://perfectday.blog/'], ['READ PAPER', './assets/seeing-sound-paper.pdf']],
   },
   {
     no: '04', chapter: 'LISTEN', title: 'The Grumpy Bear', year: '2025',
@@ -89,7 +89,7 @@ const works = [
 ]
 
 const papers = [
-  ['2026', 'Seeing Sound', 'Audiovisual AI · mediated musicianship', 'Field recordings, diffusion-generated images and playable spectrograms become a compositional workflow of interpretation, prompting and curation.', [['Website', 'https://aimc2026-demo-anonymous.netlify.app/'], ['Paper', './assets/seeing-sound-paper.pdf']], './assets/seeing-sound-figure.webp'],
+  ['2026', 'Seeing Sound', 'Audiovisual AI · mediated musicianship', 'Field recordings, diffusion-generated images and playable spectrograms become a compositional workflow of interpretation, prompting and curation.', [['Website', 'https://perfectday.blog/'], ['Paper', './assets/seeing-sound-paper.pdf']], './assets/seeing-sound-figure.webp'],
   ['2026', 'Too Cute to Kill', 'Game research · behavioural study', 'A study with 36 participants measuring how character cuteness influences aggression in a non-hostile first-person shooting task.', [['Paper', './assets/too-cute-to-kill.pdf']], './assets/photos/too-cute-character.webp'],
   ['2026', 'From Care to Surveillance', 'Data justice · public policy', 'An examination of Amsterdam’s Top600 programme and how information gathered for care can be repurposed for enforcement.', [['Paper', './assets/from-care-to-surveillance.pdf']]],
   ['2025', 'Does AI Perceive Optical Illusions Like Humans Do?', 'Human and machine perception · group poster', 'Eight people and four AI models evaluated five optical illusions, revealing different relationships to intuition and false guidance.', [['Poster', './assets/non-human-cognition-optical-illusions-poster.pdf']], './assets/non-human-cognition-optical-illusions-poster.webp', true],
@@ -101,7 +101,7 @@ const papers = [
 
 const liveWorks = [
   ['01', 'Research Interface', 'Thesis study', 'https://xaiui.vercel.app'],
-  ['02', 'Seeing Sound', 'Interactive audiovisual work', 'https://aimc2026-demo-anonymous.netlify.app/'],
+  ['02', 'Seeing Sound', 'Interactive audiovisual work', 'https://perfectday.blog/'],
   ['03', 'Zen Studio', 'Co-creative drawing', 'https://zenartstudio.netlify.app/'],
   ['04', 'Learning Football', 'Interactive story world', 'https://hciiv-project.vercel.app/'],
   ['05', 'Graffiti Studio', 'p5.js creative tool', 'https://editor.p5js.org/404sandheartbreaks/sketches/wOBTUT6kj'],
